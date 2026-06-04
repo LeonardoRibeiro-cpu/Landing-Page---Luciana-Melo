@@ -1,0 +1,67 @@
+.formulario {
+    width: 100%;
+    max-width: 700px;
+    background-color: #f7f7f7;
+    border: 1px solid #d4c4a8;
+    border-radius: 30px;
+    padding: 40px;
+}
+
+.linha {
+    display: flex;
+    gap: 20px;
+}
+
+.campo {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-bottom: 25px;
+}
+
+.campo label {
+    margin-bottom: 8px;
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: #7d5c2f;
+}
+
+.campo input,
+.campo textarea {
+    border: 1px solid #d4c4a8;
+    border-radius: 18px;
+    padding: 16px;
+    background-color: #f5f3ee;
+    font-size: 16px;
+}
+
+.campo textarea {
+    resize: vertical;
+    min-height: 180px;
+}
+
+.botao {
+    width: 100%;
+    padding: 18px;
+    border: none;
+    border-radius: 999px;
+    background-color: #9a6900;
+    color: white;
+    font-size: 20px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.botao:hover {
+    transform: translateY(-2px);
+}
+
+/* ao clicar nos inputs da pagina*/
+.campo input:focus,
+.campo textarea:focus {
+    outline: none;
+    border-color: #9a6900;
+    box-shadow: 0 0 0 3px rgba(154, 105, 0, 0.15);
+}
