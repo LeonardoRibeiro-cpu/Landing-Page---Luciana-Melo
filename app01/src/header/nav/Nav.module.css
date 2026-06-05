@@ -121,8 +121,14 @@
         background:none;
         box-shadow:none;
         padding:0;
+        
         gap:20px;
     }
+     .lista li a{
+        font-size:14px;
+    
+    }
+
 }
       
 
