@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600;700&display=swap');
+
+.header{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+
+    padding:12px 16px;
+
+    background-color:#f8f8f8;
+    border-bottom: 3px solid transparent;
+    border-image: linear-gradient(
+        to right,
+        #C9A84C 0%,
+        #F0D080 25%,
+        #FFF0A0 50%,
+        #C9A84C 75%,
+        #A07830 100%
+    ) 1;
+    margin-bottom:20px;
+}
+span{
+   background: linear-gradient(
+        to right,
+        #C9A84C 0%,
+        #F0D080 25%,
+        #FFF0A0 50%,
+        #C9A84C 75%,
+        #A07830 100%
+    );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+.logoArea{
+    display:flex;
+    align-items:center;
+    flex-shrink:0;
+    gap:10px;
+}
+
+.logoArea img{
+    width:45px;
+    height:auto;
+}
+
+.header h1{
+    font-size:18px;
+    font-weight:500;
+    margin:0;
+    font-family: 'Cormorant Garamond', serif;
+}
+
+/* =========================
+   TABLET
+========================= */
+
+@media (min-width:1024px){
+
+    .header{
+        padding:16px 28px;
+        gap:24px;
+    }
+
+    .logoArea{
+        gap:12px;
+    }
+
+    .logoArea img{
+        width:60px;
+    }
+
+    .header h1{
+        font-size:22px;
+    }
+
+}
+
+/* =========================
+   DESKTOP
+========================= */
+
+@media (min-width:1280px){
+
+    .header{
+        padding:10px 40px;
+    }
+
+    .logoArea{
+        gap:15px;
+    }
+
+    .logoArea img{
+        width:50px;
+    }
+
+    .header h1{
+        font-size:23px;
+    }
+
+}

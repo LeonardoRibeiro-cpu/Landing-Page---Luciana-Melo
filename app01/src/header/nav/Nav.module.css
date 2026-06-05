@@ -1,0 +1,147 @@
+/* =========================
+   NAV
+========================= */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+.nav{
+    display:flex;
+    justify-content:flex-end;
+    align-items:center;
+
+    flex:1;
+    position:relative; /* FIX: necessário para o absolute da .lista funcionar */
+}
+
+/* =========================
+   MOBILE FIRST
+========================= */
+
+/* MENU */
+
+.lista{
+    display:none;
+
+    flex-direction:column;
+
+    position:absolute;
+
+    top:70px;
+    right:0;
+
+    background:white;
+
+    padding:20px;
+
+    border-radius:10px;
+
+    list-style:none;
+
+    gap:20px;
+
+    box-shadow:0 4px 10px rgba(0,0,0,0.1);
+
+    z-index:999;
+}
+
+/* MENU ABERTO */
+
+.ativo{
+    display:flex;
+}
+
+/* LINKS */
+
+.lista li a{
+    text-decoration:none;
+
+    color:black;
+
+    font-size:16px;
+    font-family: 'Inter', sans-serif;
+    font-weight:500;
+}
+
+/* =========================
+   HAMBURGER
+========================= */
+
+.menuHamburger{
+    display:flex;
+
+    flex-direction:column;
+
+    justify-content:center;
+    align-items:center;
+
+    gap:5px;
+
+    cursor:pointer;
+
+    width:50px;
+    height:50px;
+
+    position:relative;
+
+    z-index:1000;
+}
+
+/* LINHAS DO HAMBURGER */
+
+.menuHamburger span{
+    width:30px;
+    height:4px;
+
+   background: linear-gradient(
+        to right,
+        #C9A84C 0%,
+        #F0D080 25%,
+        #FFF0A0 50%,
+        #C9A84C 75%,
+        #A07830 100%
+    );
+
+    border-radius:5px;
+
+    display:block;
+}
+
+/* =========================
+   TABLET
+========================= */
+
+@media (min-width:1024px){
+    .menuHamburger{
+        display:none;
+    }
+
+    .lista{
+        display:flex;
+        position:static;
+        flex-direction:row;
+        align-items:center;
+        background:none;
+        box-shadow:none;
+        padding:0;
+        gap:20px;
+    }
+}
+      
+
+
+/* =========================
+   DESKTOP
+========================= */
+@media (min-width:1280px){
+
+    .lista{
+        gap:30px;
+    }
+    
+    .lista li{
+        padding:0px;
+    }
+    .lista li a{
+        font-size:18px;
+    
+    }
+
+}
