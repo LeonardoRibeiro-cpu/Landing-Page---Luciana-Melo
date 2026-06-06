@@ -1,0 +1,329 @@
+/* =========================
+   SESSAO 1
+========================= */
+
+.sessao1 {
+  background: linear-gradient(135deg, #fdf8f0 0%, #f5ede0 60%, #fdf8f0 100%);
+  padding: 60px 24px;
+  overflow: visible;
+  position: relative;
+}
+
+/* =========================
+   MANCHAS DE FUNDO
+========================= */
+
+.sessao1::before {
+  content: '';
+  position: absolute;
+  top: -100px;
+  right: -150px;
+  left: unset;
+  width: 450px;
+  height: 450px;
+  background: radial-gradient(circle, rgba(201, 168, 76, 0.7) 0%, transparent 70%);
+  border-radius: 50%;
+  pointer-events: none;
+}
+
+.sessao1::after {
+  content: '';
+  position: absolute;
+  bottom: -120px;
+  left: -150px;
+  right: unset;
+  width: 400px;
+  height: 400px;
+ background: radial-gradient(circle, rgba(180, 140, 60, 0.65) 0%, transparent 70%);
+  border-radius: 50%;
+  pointer-events: none;
+}
+
+/* =========================
+   CONTAINER
+========================= */
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  gap: 48px;
+  max-width: 1200px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 1;
+}
+
+/* =========================
+   CONTEUDO
+========================= */
+
+.conteudo {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+   padding-left: 80px;
+}
+
+/* =========================
+   TAG TOPO
+========================= */
+
+.tag {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-family: 'Inter', sans-serif;
+  font-size: 10px;
+  font-weight: 500;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #8a7040;
+  -webkit-text-fill-color: #8a7040;
+  background: rgba(201, 168, 76, 0.08);
+  border: 1px solid rgba(201, 168, 76, 0.35);
+  padding: 6px 14px;
+  border-radius: 100px;
+  width: fit-content;
+  line-height: 1;
+}
+
+.tag::before {
+  content: '✦';
+  font-size: 9px;
+  color: #C9A84C;
+  -webkit-text-fill-color: #C9A84C;
+}
+
+/* =========================
+   TITULO
+========================= */
+
+.conteudo :global(h1) {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 44px;
+  font-weight: 500;
+  line-height: 1.1;
+  color: #1a1a1a;
+  margin: 0;
+  max-width: unset; /* quebra controlada pelo <br/> no JSX */
+}
+
+.conteudo :global(h1 em) {
+  font-style: italic;
+  color: #C9A84C;
+  -webkit-text-fill-color: #C9A84C;
+  font-weight: 500;
+}
+
+.conteudo :global(p) {
+  font-family: 'Inter', sans-serif;
+  font-size: 14px;
+  line-height: 1.6;
+  color: #555;
+  margin: 0;
+  max-width: 460px;
+}
+
+/* =========================
+   BOTAO
+========================= */
+
+.conteudo :global(button),
+.conteudo :global(a) {
+  margin-top: 8px;
+  width: fit-content;
+  padding: 12px 40px;
+}
+
+/* =========================
+   STATS
+========================= */
+
+.stats {
+  display: flex;
+  gap: 32px;
+  margin-top: 8px;
+}
+
+.stat {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.statNumero,.statNumeroPrata {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 26px;
+  font-weight: 600;
+  line-height: 1;
+}
+.statNumero{
+   background: linear-gradient(
+        to right,
+        #D8B260 0%,
+        #B37903 50%,
+        #DCC17F 100%
+    );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+.statNumeroPrata {
+  background: linear-gradient(
+        to right,
+        #C0C0C0 0%,
+        #a5a4a4 50%,
+        #D3D3D3 100%
+    );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    margin-top: 4px;
+}
+.statLabel {
+  font-family: 'Inter', sans-serif;
+  font-size: 9px;
+  font-weight: 500;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  color: #1a1a1a;
+  -webkit-text-fill-color: #1a1a1a;
+  line-height: 1.4;
+}
+
+/* =========================
+   IMAGEM
+========================= */
+
+.imagem {
+  display: flex;
+  justify-content: center;
+  align-items: stretch; /* imagem ocupa toda a altura do grid */
+}
+
+.imagemWrapper {
+  position: relative;
+  width: 100%;
+  max-width: 320px;
+  padding: 5px;
+  border-radius: 18px;
+  background: linear-gradient(
+    to bottom,
+    #C9A84C 0%,
+    #F0D080 25%,
+    #FFF0A0 50%,
+    #C9A84C 75%,
+    #A07830 100%
+  );
+}
+
+.imagemWrapper img {
+  width: 100%;
+  height: 100%;
+  min-height: 480px;
+  object-fit: cover;
+  object-position: top center;
+  border-radius: 16px;
+  display: block;
+}
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 767px) {
+
+  .sessao1 {
+    padding: 40px 20px;
+  }
+
+  .container {
+    grid-template-columns: 1fr;
+    gap: 36px;
+  }
+
+  .imagem {
+    order: -1;
+    align-items: center;
+  }
+
+  .imagemWrapper {
+    max-width: 300px;
+    margin: 0 auto;
+  }
+
+  .imagemWrapper img {
+    height: 380px;
+    min-height: unset;
+  }
+
+  .conteudo :global(h1) {
+    font-size: 32px;
+  }
+
+  .stats {
+    gap: 20px;
+  }
+
+  .statNumero {
+    font-size: 20px;
+  }
+
+}
+
+/* =========================
+   TABLET
+========================= */
+
+@media (min-width: 768px) and (max-width: 1023px) {
+
+  .sessao1 {
+    padding: 60px 32px;
+  }
+
+  .container {
+    gap: 32px;
+  }
+
+  .imagemWrapper img {
+    min-height: 340px;
+  }
+
+  .conteudo :global(h1) {
+    font-size: 38px;
+  }
+
+}
+
+/* =========================
+   DESKTOP
+========================= */
+
+@media (min-width: 1280px) {
+
+  .sessao1 {
+    padding: 80px 40px;
+  }
+
+  .container {
+    gap: 64px;
+  }
+
+  .imagemWrapper {
+    max-width: 380px;
+  }
+
+  .imagemWrapper img {
+    min-height: 460px;
+  }
+
+  .conteudo :global(h1) {
+    font-size: 55px;
+  }
+
+  .statNumero {
+    font-size: 30px;
+  }
+
+}

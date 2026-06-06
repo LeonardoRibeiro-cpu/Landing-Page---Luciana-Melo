@@ -1,14 +1,17 @@
+/* =========================
+   FOOTER
+========================= */
 
-
-.header{
+.footer{
     display:flex;
     justify-content:space-between;
     align-items:center;
-
+ 
     padding:12px 16px;
+    font-family: 'Inter', sans-serif;
+    background-color:#ffffff;
 
-    background-color:hsl(0, 100%, 100%);
-    border-bottom: 3px solid transparent;
+    border-top: 3px solid transparent;
     border-image: linear-gradient(
         to right,
         #C9A84C 0%,
@@ -18,19 +21,11 @@
         #A07830 100%
     ) 1;
 }
-span{
-   background: linear-gradient(
-        to right,
-        #C9A84C 0%,
-        #F0D080 25%,
-        #FFF0A0 50%,
-        #C9A84C 75%,
-        #A07830 100%
-    );
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
-}
+
+/* =========================
+   LOGO AREA
+========================= */
+
 .logoArea{
     display:flex;
     align-items:center;
@@ -43,11 +38,21 @@ span{
     height:auto;
 }
 
-.header h1{
+.footer h1{
     font-size:18px;
     font-weight:500;
     margin:0;
     font-family: 'Cormorant Garamond', serif;
+}
+
+/* =========================
+   COPYRIGHT
+========================= */
+
+.copyright{
+    font-size:10px;
+   color: #1a1a1a;
+  -webkit-text-fill-color: #1a1a1a;
 }
 
 /* =========================
@@ -56,21 +61,20 @@ span{
 
 @media (min-width:1024px){
 
-    .header{
+    .footer{
         padding:16px 28px;
-        gap:24px;
-    }
-
-    .logoArea{
-        gap:12px;
     }
 
     .logoArea img{
         width:60px;
     }
 
-    .header h1{
+    .footer h1{
         font-size:22px;
+    }
+
+    .copyright{
+        font-size:13px;
     }
 
 }
@@ -81,20 +85,20 @@ span{
 
 @media (min-width:1280px){
 
-    .header{
+    .footer{
         padding:10px 40px;
     }
 
-    .logoArea{
-        gap:15px;
-    }
-
     .logoArea img{
-        width:50px;
+        width:55px;
     }
 
-    .header h1{
-        font-size:23px;
+    .footer h1{
+        font-size:22px;
+    }
+
+    .copyright{
+        font-size:14px;
     }
 
 }

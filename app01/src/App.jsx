@@ -4,11 +4,15 @@ import React from 'react';
 import Formulario from './componentes/Formulario/Formulario';
 import Header from './header/Header';
 import './css/style.css';
+import Footer from './footer/Footer';
+import Main from './main/Main';
 
 function App() {
   return (
     <>
       <Header />
+      <Main />
+      <Footer />
     </>
   );
 }

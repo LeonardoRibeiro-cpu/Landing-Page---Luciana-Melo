@@ -5,13 +5,13 @@ import styles from './Header.module.css';
 import img from '../img/logo.png';
 function Header() {
     return (
-        <div className={styles.header}>
+        <header className={styles.header}>
             <div className={styles.logoArea}>
              <img src={img} alt="Logo" width="50" />
              <h1>Dr. Luciana <span>Melo</span></h1>
             </div>
             <Nav />
-        </div>
+        </header>
     );
 }
 
