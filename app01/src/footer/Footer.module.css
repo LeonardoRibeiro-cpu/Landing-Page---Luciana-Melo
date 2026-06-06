@@ -39,8 +39,9 @@
 }
 
 .footer h1{
-    font-size:18px;
+    font-size:16px;
     font-weight:500;
+    padding-right:40px;
     margin:0;
     font-family: 'Cormorant Garamond', serif;
 }
@@ -50,7 +51,7 @@
 ========================= */
 
 .copyright{
-    font-size:10px;
+    font-size:8px;
    color: #1a1a1a;
   -webkit-text-fill-color: #1a1a1a;
 }
