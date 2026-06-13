@@ -1,7 +1,7 @@
 /* === MOBILE === */
 .sessao6 {
     background: linear-gradient(135deg, #fdf8f0 0%, #f5ede0 60%, #fdf8f0 100%);
-    padding: 60px 24px;
+    padding: 40px 24px 10px;
 }
 
 .container {
@@ -40,14 +40,14 @@
 /* === TABLET === */
 @media (min-width: 768px) {
     .sessao6 {
-        padding: 70px 32px;
+        padding: 50px 32px 10px;
     }
 }
 
 /* === DESKTOP === */
 @media (min-width: 1024px) {
     .sessao6 {
-        padding: 80px 40px;
+        padding: 60px 40px 10px;
     }
       .tituloFaq :global(h2) {
         font-size: 50px !important;
