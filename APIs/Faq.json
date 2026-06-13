@@ -1,0 +1,24 @@
+{
+  "faqs": [
+    {
+      "pergunta": "1. Por que os pacientes procuram esses tratamentos odontológicos?",
+      "resposta": "Os pacientes procuram esses tratamentos principalmente para prevenir doenças, manter a saúde bucal em dia e melhorar a qualidade de vida."
+    },
+    {
+      "pergunta": "2. Quais procedimentos são realizados para reabilitar dentes perdidos?",
+      "resposta": "A reabilitação de dentes perdidos é realizada por meio de implantes dentários, que devolvem função e estética ao sorriso."
+    },
+    {
+      "pergunta": "3. Quais tratamentos estão relacionados à saúde gengival?",
+      "resposta": "Incluem tratamentos periodontais, como cuidados com a gengiva, enxertos e procedimentos voltados à recuperação da saúde gengival."
+    },
+    {
+      "pergunta": "4. Quando devo extrair os sisos?",
+      "resposta": "A extração dos sisos é indicada quando há dor, inflamação, falta de espaço ou risco à saúde bucal."
+    },
+    {
+      "pergunta": "5. Quais são os benefícios de realizar consultas odontológicas regularmente?",
+      "resposta": "Consultas regulares ajudam na prevenção de doenças bucais, permitem diagnósticos precoces e contribuem para a manutenção da saúde e estética do sorriso."
+    }
+  ]
+}
