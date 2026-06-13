@@ -1,0 +1,55 @@
+/* === MOBILE === */
+.sessao6 {
+    background: linear-gradient(135deg, #fdf8f0 0%, #f5ede0 60%, #fdf8f0 100%);
+    padding: 60px 24px;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 32px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.tituloDescricao {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    align-items: flex-start;
+}
+
+
+.tag {
+    font-family: 'Inter', sans-serif;
+    font-size: 15px;
+    font-weight: 500;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #8a7040;
+}
+
+/* === TABLET === */
+@media (min-width: 768px) {
+    .sessao6 {
+        padding: 70px 32px;
+    }
+}
+
+/* === DESKTOP === */
+@media (min-width: 1024px) {
+    .sessao6 {
+        padding: 80px 40px;
+    }
+
+    .container {
+        grid-template-columns: 1fr 1fr;
+        gap: 80px;
+        align-items: start; /* lado esquerdo alinha ao topo */
+    }
+
+    .tituloDescricao {
+        position: sticky;
+        top: 40px; /* fica fixo enquanto a FAQ scrolla */
+    }
+}

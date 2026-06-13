@@ -18,7 +18,7 @@
         #A07830 100%
     ) 1;
 }
-span{
+.header>span{
    background: linear-gradient(
         to right,
         #C9A84C 0%,

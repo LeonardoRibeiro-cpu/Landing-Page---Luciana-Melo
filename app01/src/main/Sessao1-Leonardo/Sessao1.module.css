@@ -5,7 +5,7 @@
 .sessao1 {
   background: linear-gradient(135deg, #fdf8f0 0%, #f5ede0 60%, #fdf8f0 100%);
   padding: 60px 24px;
-  overflow: visible;
+  overflow: hidden;;
   position: relative;
 }
 
@@ -26,18 +26,7 @@
   pointer-events: none;
 }
 
-.sessao1::after {
-  content: '';
-  position: absolute;
-  bottom: -120px;
-  left: -150px;
-  right: unset;
-  width: 400px;
-  height: 400px;
- background: radial-gradient(circle, rgba(180, 140, 60, 0.65) 0%, transparent 70%);
-  border-radius: 50%;
-  pointer-events: none;
-}
+
 
 /* =========================
    CONTAINER
@@ -293,6 +282,18 @@
   .conteudo :global(h1) {
     font-size: 38px;
   }
+   .sessao1::after {
+   content: '';
+  position: absolute;
+  bottom: -120px;
+  left: -150px;
+  right: unset;
+  width: 400px;
+  height: 400px;
+  background: radial-gradient(circle, rgba(180, 140, 60, 0.65) 0%, transparent 70%);
+  border-radius: 50%;
+  pointer-events: none;
+}
 
 }
 
@@ -328,4 +329,17 @@
   .conteudo{
     padding-left: 80px;
   }
+    .sessao1::after {
+   content: '';
+  position: absolute;
+  bottom: -120px;
+  left: -150px;
+  right: unset;
+  width: 400px;
+  height: 400px;
+  background: radial-gradient(circle, rgba(180, 140, 60, 0.65) 0%, transparent 70%);
+  border-radius: 50%;
+  pointer-events: none;
+}
+
 }
