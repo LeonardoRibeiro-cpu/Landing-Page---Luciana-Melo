@@ -11,6 +11,7 @@ function Sessao6() {
                     <TituloDescricao
                         titulo="Respostas claras para começar com confiança."
                         descricao="Não encontrou sua dúvida? Fale comigo — terei o prazer em ajudar."
+                        className={Styles.tituloFaq}
                     />
                 </div>
 

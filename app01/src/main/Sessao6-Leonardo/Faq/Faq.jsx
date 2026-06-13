@@ -23,7 +23,7 @@ function Faq() {
                 <p>Carregando...</p>
             ) : (
                 faqs.map((faq, indice) => (
-                    <details key={indice} className={styles.faqItem} open={indice === 0}>
+                    <details key={indice} className={styles.faqItem}>
                         <summary className={styles.pergunta}>
                             <span>{faq.pergunta}</span>
                         </summary>
