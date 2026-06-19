@@ -92,7 +92,7 @@ function Formulario() {
                 </p>
 
 
-            <p>{msgErro}</p>
+               <p className={style.info}>{msgErro}</p>
         </form >
 
         </>

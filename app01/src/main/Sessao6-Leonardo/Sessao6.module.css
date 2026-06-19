@@ -18,14 +18,14 @@
     gap: 16px;
     align-items: flex-start;
 }
-.tituloFaq :global(h2) {
+/* .tituloFaq :global(h2) {
     font-size: 28px !important;
 }
 
 .tituloFaq :global(p) {
     font-size: 15px !important;
     margin-bottom: 0 !important;
-}
+} */
 
 
 .tag {
@@ -63,7 +63,7 @@
         top: 40px; /* fica fixo enquanto a FAQ scrolla */
     }
 
-    .tituloFaq :global(p) {
+    /* .tituloFaq :global(p) {
     font-size: 15px !important;
-    }
+    } */
 }

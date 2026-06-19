@@ -9,16 +9,21 @@
     text-align:left;
     gap:16px;
 }
-
+.tituloDescricao h1{
+    font-size:48px;
+}
 .tituloDescricao h1,
 .tituloDescricao h2,
 .tituloDescricao h3{
     font-family:'Cormorant Garamond', serif;
-    font-size:48px;
     font-weight:400;
     line-height:1.1;
     margin:0;
     color:#1a1a1a;
+}
+.tituloDescricao h2,
+.tituloDescricao h3{
+  font-size:28px ;
 }
 
 .tituloDescricao h1 em,
@@ -27,18 +32,11 @@
     font-style:italic;
     color:#C9A84C;
 }
-.tituloFaq h2 {
-    font-size: 28px !important;
-}
 
-.tituloFaq p {
-    font-size: 13px !important;
-    margin-bottom: 0 !important;
-}
 
 .tituloDescricao p{
     font-family:'Inter', sans-serif;
-    font-size:15px;
+    font-size:13px;
     font-weight:400;
     line-height:1.6;
     color:#444;
@@ -61,9 +59,9 @@
     .tituloDescricao p{
         font-size:16px;
     }
-    .tituloFaq h2 {
+    /* .tituloFaq h2 {
         font-size: 30px !important;
-    }
+    } */
 }
 
 /* =========================
@@ -74,9 +72,9 @@
 
     .tituloDescricao h2,
     .tituloDescricao h3{
-        font-size:64px;
+        font-size:50px;
     }
-     .tituloFaq h2 {
+     /* .tituloFaq h2 {
         font-size: 34px !important;
-    }
+    } */
 }
