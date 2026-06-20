@@ -14,7 +14,7 @@ import TituloDescricao from '../utils/TituloDescricao/TituloDescricao';
 function Sessao4() {
  
     return (
-         <section className={styles.sessao4} id = "quem-sou">
+         <section className={styles.sessao4} id="quem-sou">
 
             <div className={styles.container}>
 
