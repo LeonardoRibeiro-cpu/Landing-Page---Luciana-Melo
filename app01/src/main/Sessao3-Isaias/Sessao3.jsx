@@ -17,6 +17,9 @@ import depois4 from "../../img/resultados/depois4.png";
 import antes5 from "../../img/resultados/antes5.png";
 import depois5 from "../../img/resultados/depois5.png";
 
+import antes6 from "../../img/resultados/antes6.png";
+import depois6 from "../../img/resultados/depois6.png";
+
 function Sessao3() {
 
     const casos = [
@@ -24,7 +27,8 @@ function Sessao3() {
         { antes: antes2, depois: depois2 },
         { antes: antes3, depois: depois3 },
         { antes: antes4, depois: depois4 },
-        { antes: antes5, depois: depois5 }
+        { antes: antes5, depois: depois5 },
+        { antes: antes6, depois: depois6 }
     ];
 
     const [indice, setIndice] = useState(0);
