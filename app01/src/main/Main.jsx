@@ -24,7 +24,6 @@ function Main() {
           <Separador />
           
           <Sessao7/>
-          <Separador />
         </main>
     );
 }
