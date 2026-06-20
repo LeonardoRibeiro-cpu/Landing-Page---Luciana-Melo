@@ -7,6 +7,7 @@ function Depoimentos() {
 
     const [depoimentos, setDepoimentos] = useState([]);
     const [indice, setIndice] = useState(0);
+    const mobile = window.innerWidth <= 768;
 
     useEffect(() => {
         buscarDepoimentos();
@@ -53,7 +54,9 @@ function Depoimentos() {
                         <div
                             className={styles.slider}
                             style={{
-                                transform: `translateX(-${indice * 33.333}%)`
+                                transform: mobile
+                                    ? `translateX(-${indice * 100}%)`
+                                    : `translateX(-${indice * 33.333}%)`
                             }}
                         >
 

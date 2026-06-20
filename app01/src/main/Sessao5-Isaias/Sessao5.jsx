@@ -6,7 +6,7 @@ import Depoimentos from "./Depoimentos/Depoimentos";
 function Sessao5() {
 
     return (
-        <section className={styles.sessao5}>
+        <section className={styles.sessao5} id="depoimentos">
 
             <div className={styles.container}>
 
