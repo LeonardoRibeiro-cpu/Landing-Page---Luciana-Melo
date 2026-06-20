@@ -8,6 +8,38 @@ function Depoimentos() {
     const [depoimentos, setDepoimentos] = useState([]);
     const [indice, setIndice] = useState(0);
     const mobile = window.innerWidth <= 768;
+    const [cardsVisiveis, setCardsVisiveis] = useState(3);
+
+
+    useEffect(() => {
+
+        function atualizarLayout() {
+
+            if (window.innerWidth <= 768) {
+                setCardsVisiveis(1);
+            }
+            else if (window.innerWidth <= 1024) {
+                setCardsVisiveis(2);
+            }
+            else {
+                setCardsVisiveis(3);
+            }
+        }
+
+        atualizarLayout();
+
+        window.addEventListener(
+            "resize",
+            atualizarLayout
+        );
+
+        return () =>
+            window.removeEventListener(
+                "resize",
+                atualizarLayout
+            );
+
+    }, []);
 
     useEffect(() => {
         buscarDepoimentos();
@@ -26,11 +58,12 @@ function Depoimentos() {
         const intervalo = setInterval(() => {
 
             setIndice((atual) =>
-                atual === depoimentos.length - 1
+                // atual === depoimentos.length - 1
+                atual >= depoimentos.length - cardsVisiveis
                     ? 0
                     : atual + 1
             );
-
+        // }, [depoimentos, cardsVisiveis]);
         }, 5000);
 
         return () => clearInterval(intervalo);
@@ -54,9 +87,10 @@ function Depoimentos() {
                         <div
                             className={styles.slider}
                             style={{
-                                transform: mobile
-                                    ? `translateX(-${indice * 100}%)`
-                                    : `translateX(-${indice * 33.333}%)`
+                                transform: `translateX(-${indice * (100 / cardsVisiveis)}%)`
+                                // transform: mobile
+                                //     ? `translateX(-${indice * 100}%)`
+                                //     : `translateX(-${indice * 33.333}%)`
                             }}
                         >
 
