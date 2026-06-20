@@ -11,7 +11,7 @@ import {
 function Sessao2() {
 
     return (
-        <section id = "especialidades" className={styles.sessao2}>
+        <section id ="especialidades" className={styles.sessao2}>
 
             <div className={styles.container}>
 

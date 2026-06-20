@@ -6,6 +6,7 @@ import Sessao6 from './Sessao6-Leonardo/Sessao6';
 import Separador from './utils/Separador/Separador';
 import Sessao7 from './Sessao7 - Giovanny/Sessao7';
 import Sessao2 from './Sessao2-Giovanny/Sessao2';
+import Sessao4 from './Sessao4-Giovanny/Sessao4';
 function Main() {
     return (
         <main>
@@ -15,7 +16,8 @@ function Main() {
           <Separador/>
           <Sessao3 />
           <Separador />
-
+          <Sessao4/>
+          <Separador />
           <Sessao6 />
           <Separador />
           
