@@ -1,0 +1,54 @@
+{
+  "depoimentos": [
+    {
+      "nome": "Mariana S.",
+      "procedimento": "Tratamento Periodontal",
+      "texto": "Fiz meu tratamento periodontal com a Dra. Luciana e fiquei impressionada com o cuidado em cada consulta. Além do resultado excelente, todo o processo foi muito tranquilo e acolhedor."
+    },
+    {
+      "nome": "Carlos M.",
+      "procedimento": "Implante Dentário",
+      "texto": "Passei pelo processo de implante e me senti seguro do início ao fim. O resultado ficou extremamente natural e hoje voltei a sorrir com confiança."
+    },
+    {
+      "nome": "Fernanda A.",
+      "procedimento": "Reconstrução Óssea",
+      "texto": "Precisava realizar uma reconstrução óssea e estava insegura no começo. A atenção, a explicação detalhada e o acompanhamento fizeram toda a diferença."
+    },
+    {
+      "nome": "Roberto L.",
+      "procedimento": "Implantodontia",
+      "texto": "Desde a primeira consulta percebi o profissionalismo da equipe. O tratamento foi realizado com muito cuidado e superou minhas expectativas."
+    },
+    {
+      "nome": "Patrícia G.",
+      "procedimento": "Estética Gengival",
+      "texto": "Sempre tive vergonha do meu sorriso por causa da aparência da gengiva. O resultado ficou incrível e minha autoestima mudou completamente."
+    },
+    {
+      "nome": "Juliana F.",
+      "procedimento": "Enxerto Ósseo",
+      "texto": "Recebi todas as orientações necessárias durante o tratamento. A recuperação foi melhor do que imaginei e fiquei muito satisfeita com o resultado."
+    },
+    {
+      "nome": "Ricardo P.",
+      "procedimento": "Cirurgia Oral",
+      "texto": "A cirurgia foi muito mais tranquila do que eu esperava. O atendimento humanizado me deixou seguro durante todo o procedimento."
+    },
+    {
+      "nome": "Camila R.",
+      "procedimento": "Implante Dentário",
+      "texto": "Perdi um dente há alguns anos e finalmente decidi fazer o implante. Hoje ninguém percebe a diferença e voltei a sorrir sem receio."
+    },
+    {
+      "nome": "Eduardo T.",
+      "procedimento": "Periodontia",
+      "texto": "O acompanhamento foi impecável. A Dra. Luciana explicou cada etapa do tratamento e demonstrou muita dedicação em todos os atendimentos."
+    },
+    {
+      "nome": "Larissa M.",
+      "procedimento": "Reabilitação Oral",
+      "texto": "Cheguei ao consultório buscando uma solução para recuperar meu sorriso e encontrei muito mais do que isso. O resultado ficou maravilhoso e natural."
+    }
+  ]
+}
