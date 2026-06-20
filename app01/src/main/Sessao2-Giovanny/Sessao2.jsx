@@ -11,7 +11,7 @@ import {
 function Sessao2() {
 
     return (
-        <section className={styles.sessao2}>
+        <section id = "especialidades" className={styles.sessao2}>
 
             <div className={styles.container}>
 
@@ -23,7 +23,7 @@ function Sessao2() {
                     titulo={
                         <>
                             Cuidado completo, do
-                            <br />
+                            <br/>
                             diagnóstico à reabilitação.
                         </>
                     }
