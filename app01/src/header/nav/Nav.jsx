@@ -18,10 +18,10 @@ function Nav() {
 
             <ul className={`${styles.lista} ${menuAberto ? styles.ativo : ''}`}>
                 <li><a href="/especialidades">Especialidades</a></li>
-                <li><a href="/sorrisos">Sorrisos</a></li>
+                <li><a href="#sorrisos">Sorrisos</a></li>
                 <li><a href="/quem-sou">Quem Sou</a></li>
-                <li><a href="#faq">Depoimentos</a></li>
-                <li><a href="/duvidas">Dúvidas</a></li>
+                <li><a href="#depoimentos">Depoimentos</a></li>
+                <li><a href="#faq">Dúvidas</a></li>
                 <li><FaleComigo /></li>
             </ul>
         </nav>

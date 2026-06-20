@@ -46,7 +46,7 @@ function Sessao3() {
     }
 
     return (
-        <section className={styles.sessao3}>
+        <section className={styles.sessao3} id="sorrisos">
 
             <div className={styles.container}>
 

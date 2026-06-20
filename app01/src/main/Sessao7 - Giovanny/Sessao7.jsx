@@ -1,3 +1,4 @@
+// eslint-disable-next-line no-unused-vars
 import React from "react";
 import Formulario from "./Formulario/Formulario";
 import style from "./Sessao7.module.css";
@@ -14,7 +15,7 @@ import {
 
 function Sessao7() {
     return (
-        <section className={style.contato}>
+        <section className={style.contato} id="sobre">
 
             <div className={style.info}>
 

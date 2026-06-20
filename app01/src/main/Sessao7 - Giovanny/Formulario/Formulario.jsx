@@ -1,3 +1,4 @@
+// eslint-disable-next-line no-unused-vars
 import React, { use, useState } from 'react';
 import style from './Formulario.module.css';
 import emailjs from '@emailjs/browser';
@@ -31,9 +32,11 @@ function Formulario() {
             };
 
             emailjs.send('service_c5rwkbz', 'template_c5ig6b8', templateParams, '2hzSUMhUaQqJzLSGr').then(
+                // eslint-disable-next-line no-unused-vars
                 (response) => {
                     setMsgErro("Email enviado com sucesso!!")
                 },
+                // eslint-disable-next-line no-unused-vars
                 (error) => {
                     setMsgErro("Não foi possivel enviar o email")
                 },
