@@ -24,7 +24,7 @@ function Formulario() {
         if (form.nome == "" || form.email == "" || form.msg == "" || form.telefone == "") {
             setMsgErro("Todos os campos devem ser preenchidos!");
         } else {
-            var templateParams = {
+             var templateParams = {
                 from_name: form.nome,
                 from_telefone: form.nome,
                 from_email: form.email,
