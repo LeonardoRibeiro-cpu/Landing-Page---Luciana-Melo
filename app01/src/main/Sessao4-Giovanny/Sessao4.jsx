@@ -1,6 +1,6 @@
 import React from 'react';
 import styles from './Sessao4.module.css';
-import LucianaMelo from '../../img/LucianaMelo.jpeg';
+import LucianaMelo from '../../img/luciana.png';
 import TituloDescricao from '../utils/TituloDescricao/TituloDescricao';
    import {
     FaAward,
@@ -105,9 +105,9 @@ function Sessao4() {
                 </div>
 
                 <div className={styles.imagem}>
-                          <div className={styles.imagemWrapper}>
+                          {/* <div className={styles.imagemWrapper}> */}
                             <img src={LucianaMelo} alt="Dr. Luciana Melo" />
-                          </div>
+                          {/* </div> */}
                 </div>
 
             </div>

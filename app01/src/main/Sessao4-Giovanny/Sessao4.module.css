@@ -14,11 +14,24 @@
     text-transform: uppercase;
     color: #8a7040;
 }
+
+
+.imagem {
+  display: flex;
+  width: 600px; /* Altere aqui o tamanho horizontal máximo que você deseja */
+  
+}
+
+/* Isso força a imagem a respeitar o tamanho do container .imagem */
+.imagem img {
+  width: 100%;
+  margin-bottom: -80px;
+}
+/* 
 .imagem {
   display: flex;
   justify-content: center;
   align-items: stretch; /* imagem ocupa toda a altura do grid */
-}
 
 .imagemWrapper {
   position: relative;
