@@ -38,67 +38,81 @@ function Depoimentos() {
 
     return (
         <>
-            <div className={styles.wrapper}>
 
-                <div
-                    className={styles.slider}
-                    style={{
-                        transform: `translateX(-${indice * 33.333}%)`
-                    }}
-                >
+            {depoimentos.length === 0 ? (
 
-                    {depoimentos.map((item, index) => (
+                <p className={styles.carregando}>
+                    Carregando...
+                </p>
+
+            ) : (
+
+                <>
+                    <div className={styles.wrapper}>
 
                         <div
-                            key={index}
-                            className={styles.card}
+                            className={styles.slider}
+                            style={{
+                                transform: `translateX(-${indice * 33.333}%)`
+                            }}
                         >
 
-                            <span className={styles.aspas}>
-                                ❞
-                            </span>
+                            {depoimentos.map((item, index) => (
 
-                            <p className={styles.texto}>
-                                "{item.texto}"
-                            </p>
+                                <div
+                                    key={index}
+                                    className={styles.card}
+                                >
 
-                            <hr />
+                                    <span className={styles.aspas}>
+                                        ❞
+                                    </span>
 
-                            <div className={styles.autor}>
-                                <h4>{item.nome}</h4>
+                                    <p className={styles.texto}>
+                                        "{item.texto}"
+                                    </p>
 
-                                <span>
-                                    {item.procedimento}
-                                </span>
-                            </div>
+                                    <hr />
+
+                                    <div className={styles.autor}>
+                                        <h4>{item.nome}</h4>
+
+                                        <span>
+                                            {item.procedimento}
+                                        </span>
+                                    </div>
+
+                                </div>
+
+                            ))}
 
                         </div>
 
-                    ))}
+                    </div>
 
-                </div>
+                    <div className={styles.indicadores}>
 
-            </div>
+                        {depoimentos.map((_, index) => (
 
-            <div className={styles.indicadores}>
+                            <button
+                                key={index}
+                                className={
+                                    indice === index
+                                        ? styles.ativo
+                                        : ""
+                                }
+                                onClick={() =>
+                                    setIndice(index)
+                                }
+                            />
 
-                {depoimentos.map((_, index) => (
+                        ))}
 
-                    <button
-                        key={index}
-                        className={
-                            indice === index
-                                ? styles.ativo
-                                : ""
-                        }
-                        onClick={() =>
-                            setIndice(index)
-                        }
-                    />
+                    </div>
+                </>
 
-                ))}
+            )}
 
-            </div>
         </>
     );
 }

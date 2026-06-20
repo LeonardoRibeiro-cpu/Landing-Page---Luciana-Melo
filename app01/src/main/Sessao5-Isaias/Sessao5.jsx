@@ -10,13 +10,17 @@ function Sessao5() {
 
             <div className={styles.container}>
 
-                <span className={styles.tag}>
-                    DEPOIMENTOS
-                </span>
+                <div className={styles.header}>
 
-                <TituloDescricao
-                    titulo="O que nossos pacientes dizem."
-                />
+                    <span className={styles.tag}>
+                        DEPOIMENTOS
+                    </span>
+
+                    <TituloDescricao
+                        titulo="O que nossos pacientes dizem."
+                    />
+
+                </div>
 
                 <Depoimentos />
 
