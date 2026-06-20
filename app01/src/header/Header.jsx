@@ -7,7 +7,7 @@ function Header() {
     return (
         <header className={styles.header}>
             <div className={styles.logoArea}>
-             <img src={img} alt="Logo" width="50" />
+             <img src={img} alt="Logo" width="50" onClick={() => window.location.href = '#'} />
              <h1>Dr. Luciana <span>Melo</span></h1>
             </div>
             <Nav />
