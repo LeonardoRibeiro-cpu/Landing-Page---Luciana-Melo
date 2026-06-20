@@ -14,7 +14,7 @@ import TituloDescricao from '../utils/TituloDescricao/TituloDescricao';
 function Sessao4() {
  
     return (
-         <section className={styles.sessao4}>
+         <section className={styles.sessao4} id = "quem-sou">
 
             <div className={styles.container}>
 
@@ -45,12 +45,9 @@ function Sessao4() {
                         </p>
 
                         <p>
-                            Especialista em Periodontia e Implantodontia,
-                            é pós-graduada em cirurgia avançada, reconstruções
+                            Pós-graduada em cirurgia avançada, reconstruções
                             ósseas e teciduais.
-                        </p>
-
-                        <p>
+                        
                             Reconhecida pela excelência em seus resultados,
                             participa constantemente de congressos nacionais e
                             internacionais.
