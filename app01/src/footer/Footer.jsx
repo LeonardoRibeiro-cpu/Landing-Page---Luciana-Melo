@@ -8,7 +8,7 @@ function Footer () {
                     <img src={img} alt="Logo" width="50" />
                     <h1>Dr. Luciana <span>Melo</span></h1>
                    </div>
-                <p className={styles.copyright}>© 2026 Dra. Luciana Melo · Periodontia & Implantodontia · CRO/MG</p>
+                <p className={styles.copyright}>© 2026 Dra. Luciana Melo · Periodontia & Implantodontia · URA/MG</p>
         </footer>
         
     );
