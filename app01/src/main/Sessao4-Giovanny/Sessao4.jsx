@@ -105,9 +105,9 @@ function Sessao4() {
                 </div>
 
                 <div className={styles.imagem}>
-                          {/* <div className={styles.imagemWrapper}> */}
+        
                             <img src={LucianaMelo} alt="Dr. Luciana Melo" />
-                          {/* </div> */}
+                          
                 </div>
 
             </div>
