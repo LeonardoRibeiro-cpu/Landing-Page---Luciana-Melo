@@ -41,7 +41,7 @@ function Sessao7() {
                     <div className={style.icone}>
                         <FaEnvelope />
                     </div>
-                    <span>contato@lucianamelo.odo.br</span>
+                    <span>lucianamelopaula@yahoo.com.br</span>
                 </div>
 
                 <div className={style.itemContato}>
@@ -52,17 +52,23 @@ function Sessao7() {
                 </div>
 
                 <div className={style.redes}>
-                    <div className={style.social}>
+                    <a
+                        href="https://www.instagram.com/dralucianameloimplante/"
+                        target="_blank"
+                        rel="noreferrer"
+                        className={style.social}
+                    >
                         <FaInstagram />
-                    </div>
-
-                    <div className={style.social}>
+                    </a>
+                    <a
+                        href="https://wa.me/5534988439008"
+                        target="_blank"
+                        rel="noreferrer"
+                        className={style.social}
+                    >
                         <FaWhatsapp />
-                    </div>
+                    </a>
 
-                    <div className={style.social}>
-                        <FaFacebookF />
-                    </div>
                 </div>
 
             </div>
