@@ -17,3 +17,7 @@ main {
     padding-top: 60px;
     overflow: hidden;
 }
+
+html{
+    scroll-behavior: smooth;
+}
