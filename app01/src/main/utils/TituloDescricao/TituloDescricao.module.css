@@ -11,6 +11,7 @@
 }
 .tituloDescricao h1{
     font-size:48px;
+    max-width: unset;
 }
 .tituloDescricao h1,
 .tituloDescricao h2,
@@ -49,8 +50,10 @@
    TABLET
 ========================= */
 
-@media (min-width:1024px){
-
+@media(min-width: 768px) and  (max-width:1024px){
+     .tituloDescricao h1{
+       font-size: 38px;
+     }
     .tituloDescricao h2,
     .tituloDescricao h3{
         font-size:56px;
@@ -69,10 +72,16 @@
 ========================= */
 
 @media (min-width:1280px){
-
+    .tituloDescricao h1{
+      font-size: 70px;
+      max-width: unset;
+    }
     .tituloDescricao h2,
     .tituloDescricao h3{
         font-size:50px;
+    }
+    .tituloDescricao p{
+        font-size:18px;
     }
      /* .tituloFaq h2 {
         font-size: 34px !important;

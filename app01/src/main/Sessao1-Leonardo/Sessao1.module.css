@@ -34,8 +34,8 @@
 
 .container {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  align-items: center;
+  grid-template-columns: 1.2fr 1fr;
+  align-items: stretch;
   gap: 48px;
   max-width: 1200px;
   margin: 0 auto;
@@ -50,6 +50,7 @@
 .conteudo {
   display: flex;
   flex-direction: column;
+  justify-content: center;
   gap: 20px;
    
 }
@@ -88,30 +89,11 @@
    TITULO
 ========================= */
 
-.conteudo :global(h1) {
-  font-family: 'Cormorant Garamond', serif;
-  font-size: 44px;
-  font-weight: 500;
-  line-height: 1.1;
-  color: #1a1a1a;
-  margin: 0;
-  max-width: unset; /* quebra controlada pelo <br/> no JSX */
-}
-
 .conteudo :global(h1 em) {
   font-style: italic;
   color: #C9A84C;
   -webkit-text-fill-color: #C9A84C;
   font-weight: 500;
-}
-
-.conteudo :global(p) {
-  font-family: 'Inter', sans-serif;
-  font-size: 14px;
-  line-height: 1.6;
-  color: #555;
-  margin: 0;
-  max-width: 460px;
 }
 
 /* =========================
@@ -184,14 +166,29 @@
 /* =========================
    IMAGEM
 ========================= */
-
 .imagem {
   display: flex;
   justify-content: center;
-  align-items: stretch; /* imagem ocupa toda a altura do grid */
+  align-items: flex-end;
+  width: 100%;
+  max-width: 100%;
+  overflow: visible;
 }
 
-.imagemWrapper {
+.imagem img {
+  width: 100%;
+  max-width: 360px;
+  height: auto;
+  display: block;
+  margin-bottom: -80px;
+}
+/* .imagem {
+  display: flex;
+  justify-content: center;
+  align-items: stretch; 
+}
+
+/* .imagemWrapper {
   position: relative;
   width: 100%;
   max-width: 320px;
@@ -205,9 +202,9 @@
     #C9A84C 75%,
     #A07830 100%
   );
-}
+} */
 
-.imagemWrapper img {
+/* .imagemWrapper img {
   width: 100%;
   height: 100%;
   min-height: 480px;
@@ -215,7 +212,7 @@
   object-position: top center;
   border-radius: 16px;
   display: block;
-}
+} */
 
 /* =========================
    MOBILE
@@ -227,17 +224,28 @@
     padding: 40px 20px;
   }
 
+  .imagem {
+    max-width: 480px;
+    margin: 0 auto;
+  }
+
+  .imagem img {
+    max-width: 280px;
+  }
   .container {
     grid-template-columns: 1fr;
     gap: 36px;
   }
-
   .imagem {
+    max-width: 480px;
+    margin: 0 auto;
+}
+  /* .imagem {
     order: -1;
     align-items: center;
-  }
+  } */
 
-  .imagemWrapper {
+  /* .imagemWrapper {
     max-width: 300px;
     margin: 0 auto;
   }
@@ -245,11 +253,8 @@
   .imagemWrapper img {
     height: 380px;
     min-height: unset;
-  }
+  } */
 
-  .conteudo :global(h1) {
-    font-size: 32px;
-  }
 
   .stats {
     gap: 20px;
@@ -271,17 +276,19 @@
     padding: 60px 32px;
   }
 
+  .imagem img {
+    max-width: 320px;
+  }
+
   .container {
     gap: 32px;
   }
 
-  .imagemWrapper img {
+  /* .imagemWrapper img {
     min-height: 340px;
-  }
+  } */
 
-  .conteudo :global(h1) {
-    font-size: 38px;
-  }
+  
    .sessao1::after {
    content: '';
   position: absolute;
@@ -302,7 +309,10 @@
 ========================= */
 
 @media (min-width: 1280px) {
-
+  .container {
+    grid-template-columns: 1.3fr 1fr;  /* dá mais espaço pro texto, menos pra imagem */
+    gap: 40px;                          /* reduz um pouco o gap pra sobrar mais espaço */
+  }
   .sessao1 {
     padding: 80px 40px;
   }
@@ -311,23 +321,28 @@
     gap: 64px;
   }
 
-  .imagemWrapper {
-    max-width: 380px;
+  /* .imagemWrapper {
+    max-width: 480px;
+  } */
+
+  /* .imagemWrapper img {
+    min-height: 560px;
+  } */
+  .imagem {
+    justify-content: flex-end;
+    max-width: 100%;
+    margin: 0;
   }
 
-  .imagemWrapper img {
-    min-height: 460px;
-  }
-
-  .conteudo :global(h1) {
-    font-size: 55px;
+  .imagem img {
+    max-width: 520px;
   }
 
   .statNumero {
     font-size: 30px;
   }
   .conteudo{
-    padding-left: 80px;
+    padding-left: 40px;
   }
     .sessao1::after {
    content: '';

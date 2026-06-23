@@ -1,6 +1,6 @@
 import FaleComigo from "../../componentes/FaleComigo/FaleComigo";
 import TituloDescricao from "../utils/TituloDescricao/TituloDescricao";
-import LucianaMelo from '../../img/LucianaMelo.jpeg';
+import LucianaMelo from '../../img/luciana.png';
 import styles from './Sessao1.module.css';
 
 function Sessao1() {
