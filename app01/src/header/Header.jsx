@@ -8,11 +8,11 @@ function Header() {
         <header className={styles.header}>
             <div className={styles.logoArea}>
              <img src={img} alt="Logo" width="50" onClick={() => window.location.href = '#'} />
-             <h1>Dr. Luciana <span>Melo</span></h1>
+             <h1>Dra. Luciana <span>Melo</span></h1>
             </div>
             <Nav />
         </header>
     );
 }
 
-export default Header;
+export default Header;      
